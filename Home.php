@@ -8,6 +8,7 @@ if (!isset($_SESSION["NAME"])) {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="jp" dir="ltr">
   <head>
