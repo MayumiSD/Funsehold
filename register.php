@@ -27,7 +27,7 @@ if (isset($_POST["signUp"])) {
                 try{
                         $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
                         $stmt = $pdo->prepare("INSERT INTO userData VALUES (?,?,?)");
-                        $stmt->execute(array($userid,$password,$nickname));
+                        $stmt->execute(array($userid,$password,$username));
                         echo '登録が完了しました。ログインしてください。';
                         header('Location:login.php');
                         
