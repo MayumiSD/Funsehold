@@ -26,8 +26,8 @@ if (isset($_POST["signUp"])) {
         if (($_POST["password"]) == ($_POST["password2"])){
                 try{
                         $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
-                        $stmt = $pdo->prepare("INSERT INTO userData (`email`,`password`,`nickname`) VALUES (`:email`,`:password`,`:nickname`)");
-                        $stmt->execute([`email`=>$userid,`password`=>$password,`nickname`=>$nickname]);
+                        $stmt = $pdo->prepare("INSERT INTO userData VALUES (?,?,?)");
+                        $stmt->execute(array($userid,$password,$nickname));
                         echo '登録が完了しました。ログインしてください。';
                         header('Location:login.php');
                         
