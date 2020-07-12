@@ -5,3 +5,5 @@ $dsn = array('host'=> 'sq65ur5a5bj7flas.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
              'dbnm'=>'m5ujgqy86pdzkdm7');
 
              
+
+             
