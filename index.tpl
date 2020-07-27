@@ -62,6 +62,7 @@
 
 <body>
 
+{include file='head.tpl'}
 {include file='header.tpl'}
 
 	<div class="fh5co-parallax" style="background-image: url(images/3.jpg);" data-stellar-background-ratio="0.5">
