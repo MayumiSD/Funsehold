@@ -41,31 +41,33 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+		<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+		<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+//共通パーツ読み込み
+	<script>
+  $(function() {
+				       $("#header").load("header.html");
+				       $("#footer").load("footer.html");
+		 						});
+ </script>
+
 </head>
 
 <body>
 {$nickname}
-	<header>
-		<div class="container text-center">
-			<div class="fh5co-navbar-brand">
-				<div class="fh5co-login">
-					<div class="loginbtn"><a href="/register.php" class="btn hanten free_submit">ユーザー登録</a></div>
-					<div class="loginbtn"><a href="/login.php" class="btn">ログイン</a></div>
-				</div>
-				<a class="fh5co-logo" href="index.php">Funsehold</a>
-				<p>面倒くさがりな私のための家事ノート</p>
-			</div>
-			<nav id="fh5co-main-nav" role="navigation">
-				<ul>
-					<li><a href="index.php" class="active">Home</a></li>
-					<li><a href="work.php">献立レシピ</a></li>
-					<li><a href="services.php">在庫管理</a></li>
-					<li><a href="about.php">買い物</a></li>
-					<li><a href="contact.php">家計簿</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+<div id="header"></div>
 
 	<div class="fh5co-parallax" style="background-image: url(images/3.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
@@ -163,34 +165,7 @@
 		</div>
 	</div><!-- end: fh5co-services-section -->
 
-	<footer>
-		<div id="footer" class="fh5co-border-line">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center">
-						<p>Copyright 2020  <a href="#">Funsehold</a>. All Rights Reserved. </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
-
-
-
+	<div id="footer"></div>
 
 </body>
 
