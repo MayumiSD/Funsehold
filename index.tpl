@@ -55,19 +55,14 @@
 	<script src="js/owl.carousel.min.js"></script>
 		<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
-//共通パーツ読み込み
-	<script>
-  $(function() {
-				       $("#header").load("header.html");
-				       $("#footer").load("footer.html");
-		 						});
+
  </script>
 
 </head>
 
 <body>
-{$nickname}
-<div id="header"></div>
+
+{include file='header.tpl'}
 
 	<div class="fh5co-parallax" style="background-image: url(images/3.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
@@ -165,7 +160,7 @@
 		</div>
 	</div><!-- end: fh5co-services-section -->
 
-	<div id="footer"></div>
+	{include file ='footer.tpl'}
 
 </body>
 
