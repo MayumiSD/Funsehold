@@ -3,10 +3,10 @@
   <div class="container text-center">
     <div class="fh5co-navbar-brand">
       <div class="fh5co-login">
-        {if isset($smarty.session.email)}
-   <p>テストログイン判定</p>
-   {else}
+        {if $smarty.session.email == ''}
    <p>非ログイン判定</p>
+   {else}
+   <p>テストログイン判定</p>
 {/if}
         <div class="loginbtn"><a href="/register.php" class="btn hanten free_submit">ユーザー登録</a></div>
         <div class="loginbtn"><a href="/login.php" class="btn">ログイン</a></div>
