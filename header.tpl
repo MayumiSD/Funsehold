@@ -3,6 +3,11 @@
   <div class="container text-center">
     <div class="fh5co-navbar-brand">
       <div class="fh5co-login">
+        {if isset($_SESSION["email"]}
+   <p>テストログイン判定</p>
+   {else}
+   <p>非ログイン判定</p>
+{/if}
         <div class="loginbtn"><a href="/register.php" class="btn hanten free_submit">ユーザー登録</a></div>
         <div class="loginbtn"><a href="/login.php" class="btn">ログイン</a></div>
       </div>
