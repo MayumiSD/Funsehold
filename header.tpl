@@ -3,7 +3,7 @@
   <div class="container text-center">
     <div class="fh5co-navbar-brand">
       <div class="fh5co-login">
-        {if isset($_SESSION["email"]}
+        {if isset($smarty.session.email)}
    <p>テストログイン判定</p>
    {else}
    <p>非ログイン判定</p>
