@@ -8,7 +8,7 @@
           <div class="loginbtn"><a href="/login.php" class="btn">ログイン</a></div>
         {else}
         <!-- ログインした時 -->
-          <a>ようこそ{$_SESSION["NAME"]}さん</a>
+          <a>ようこそ{$smarty.session.NAME}さん</a>
         {/if}
 
       </div>
