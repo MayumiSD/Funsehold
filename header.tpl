@@ -8,7 +8,7 @@
           <div class="loginbtn"><a href="/login.php" class="btn">ログイン</a></div>
         {else}
         <!-- ログインした時 -->
-          <p>ようこそ.{$_SESSION["NAME"]}.さん</p>
+          <a>ようこそ{$_SESSION["NAME"]}さん</a>
         {/if}
 
       </div>
