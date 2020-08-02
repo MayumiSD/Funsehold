@@ -3,13 +3,14 @@
   <div class="container text-center">
     <div class="fh5co-navbar-brand">
       <div class="fh5co-login">
-        {if $smarty.session.NAME == ''}
-   <p>非ログイン判定</p>
-   {else}
-   <p>テストログイン判定</p>
-{/if}
-        <div class="loginbtn"><a href="/register.php" class="btn hanten free_submit">ユーザー登録</a></div>
-        <div class="loginbtn"><a href="/login.php" class="btn">ログイン</a></div>
+        {if $smarty.session.email == ''}
+          <div class="loginbtn"><a href="/register.php" class="btn hanten free_submit">ユーザー登録</a></div>
+          <div class="loginbtn"><a href="/login.php" class="btn">ログイン</a></div>
+        {else}
+        <!-- ログインした時 -->
+          <p>ようこそ.$_SESSION["NAME"].さん</p>
+        {/if}
+
       </div>
       <a class="fh5co-logo" href="index.php">Funsehold</a>
       <p>面倒くさがりな私のための家事ノート</p>

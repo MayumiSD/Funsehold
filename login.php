@@ -28,6 +28,7 @@ if (isset($_POST["login"])) {
                 if ($_POST["password"] == $row['password']) {
 
                     $_SESSION["NAME"] = $row['nickname'];
+                    $_SESSION["email"] = $row['email'];
                     header("Location: index.php");  // メイン画面へ遷移
                     exit();  // 処理終了
 
