@@ -896,6 +896,7 @@ input[type="text"] {
 
 /* レシピページのスタイル */
 .search-container {
+  margin: 20px;
   border-radius: 30px;
   height: 60px;
   background-color: #454E53;
