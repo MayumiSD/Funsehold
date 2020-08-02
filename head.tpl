@@ -54,5 +54,6 @@
 	<script src="js/owl.carousel.min.js"></script>
 		<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+	<script src="https://kit.fontawesome.com/c939d0e917.js"></script>
 
 </head>
