@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -897,11 +897,6 @@ input[type="text"] {
 /* レシピページのスタイル */
 .search-container {
   border-radius: 30px;
-  position: absolute;
-  z-index: 100;
-  top: 230px;
-  left: 100px;
-  width: 400px;
   height: 60px;
   background-color: #454E53;
   display: flex;
@@ -933,22 +928,21 @@ input[type="text"] {
 }
 
 .list-container {
-  width: 400px;
+  width: 50%
   position: absolute;
   z-index: 100;
   background: white;
-  left: 100px;
-  top: 320px;
   border-radius: 30px;
   bottom: 20px;
-  display: flex;
   overflow-y: hidden;
   padding-bottom: 30px;
-}
-
-.list-container {
   border-bottom: 1px solid #979797;
   display: flex;
+}
+
+.favorite-list-container {
+  float: left;
+  width: 50%;
 }
 
 .info-container {
