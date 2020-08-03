@@ -5,13 +5,15 @@
 
         <!-- 非ログイン時 -->
         {if $smarty.session.email == ''}
-      <div class="fh5co-login">        
+      <div class="fh5co-login">
           <div class="loginbtn"><a href="/register.php" class="btn hanten free_submit">ユーザー登録</a></div>
           <div class="loginbtn"><a href="/login.php" class="btn">ログイン</a></div>
       </div>
         {else}
         <!-- ログインした時 -->
-          <a>ようこそ{$smarty.session.NAME}さん</a>
+          <div class="fh5co-login">
+            <a>ようこそ{$smarty.session.NAME}さん</a>
+          </div>
         {/if}
 
       <a class="fh5co-logo" href="index.php">Funsehold</a>
