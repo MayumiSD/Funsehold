@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="suggest-list-container">
-        <p>『提案』</p>
+        <ul>提案</ul>
         <div class="list">
             <div class="list-container">
                 <div class="info-container">
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="favorite-list-container">
-          <p>『私のレシピノート』</p>
+          <ul>私のレシピノート</ul>
           <div class="list">
               <div class="list-container">
                   <div class="info-container">

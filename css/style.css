@@ -929,31 +929,39 @@ input[type="text"] {
 }
 
 .list-container {
-  width: 50%
-  position: absolute;
   z-index: 100;
   background: white;
   border-radius: 30px;
   bottom: 20px;
   overflow-y: hidden;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #979797;
   display: flex;
 }
 
-.favorite-list-container {
-  float: left;
-  width: 50%;
+.suggest-list-container{
+  width: 70%;
+  display: inline-block;
+  background-color: green;
 }
 
+.favorite-list-container {
+   display: inline-block;  
+   float: right;
+    width: 30%;s
+    background-color: gray;
+}
+
+.favorite-list-container
 .info-container {
   flex-grow: 1;
 }
 
 .number-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .receipe-name {
@@ -981,6 +989,7 @@ input[type="text"] {
 .list{
   flex-grow: 1;
   overflow-y: scroll;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
