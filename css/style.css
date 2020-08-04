@@ -941,7 +941,7 @@ input[type="text"] {
 }
 
 .suggest-list-container{
-  width: 100%;
+  width: 70%;
   background-color: green;
   display:flex;
 }
@@ -987,9 +987,6 @@ input[type="text"] {
   margin-top: 30px;
 }
 
-ul{
-  padding-left: 10px;
-}
 
 .btn {
   text-align: center;
@@ -1003,21 +1000,7 @@ ul{
   font-weight: 700;
 }
 
-.suggestion {
-  width:70%;
-  display: inline-block;
-  text-align: center;
-}
-
-.receipe_note {
-  width:30%;
-  text-align: center;
-}
 
 .report-container{
   display:flex;
-}
-
-.receipe-navi li {
-  display:inline-block;
 }

@@ -13,11 +13,9 @@
           <i class="fas fa-search"></i>
       </div>
     </div>
-    <div class= "receipe-nave">
-      <ul>
-        <li>提案</li>
-        <li>私のレシピノー</li>
-      </ul>
+    <div class= "report-container">
+      <div class="suggest-list-container"><h2>提案</h2></div>
+      <div class="favorite-list-container"><h2>私のレシピノート</h2></div>
     </div>
 
     <div class="report-container">
