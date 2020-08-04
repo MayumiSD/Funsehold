@@ -18,26 +18,21 @@
         <div class="list">
             <div class="list-container">
                 <div class="info-container">
-                    <div class="number-container">
-                        <div class="receipe-number">1</div>
-                        <div class="receipe-name"><span>生姜焼き</span></div>
-                    </div>
-                        <div class="loginbtn"><a class="btn hanten free_submit">作る</a></div>
+                  <div class="receipe-number">1</div>
+                  <div class="receipe-name"><span>生姜焼き</span></div>
+                  <div class="loginbtn"><a class="btn free_submit">作る</a></div>
                 </div>
             </div>
         </div>
-      </div>
 
-      
+
       <div class="favorite-list-container">
           <ul>私のレシピノート</ul>
           <div class="list">
               <div class="list-container">
                   <div class="info-container">
-                      <div class="number-container">
-                          <div class="receipe-number">1</div>
-                          <div class="receipe-name"><span>生姜焼き</span></div>
-                      </div>
+                    <div class="receipe-number">1</div>
+                    <div class="receipe-name"><span>生姜焼き</span></div>
                   </div>
               </div>
           </div>
