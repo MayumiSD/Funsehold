@@ -176,7 +176,7 @@ header .loginbtn {
   margin-right: 10px;
 }
 
-header body .btn {
+header.btn {
   text-align: center;
   border-radius: 20px;
   border: 2px solid #f0a7a7;
@@ -188,7 +188,7 @@ header body .btn {
   font-weight: 700;
 }
 
-header body .hanten {
+header .hanten {
   color: #fff!important;
   background: #f0a7a7!important;
 }
@@ -941,21 +941,20 @@ input[type="text"] {
 }
 
 .suggest-list-container{
-  width: 70%;
+  width: 100%;
   background-color: green;
-  display:inline-block;
+  display:flex;
 }
 
 .favorite-list-container {
     width: 30%;
     background-color: gray;
-    display:inline-block;
 }
 
 .info-container {
   flex-grow: 1;
   width:70%;
-  display:table-cell;
+  display:table;
 
 }
 
@@ -963,11 +962,7 @@ input[type="text"] {
   font-size: 21px;
   color: #514c4c;
   padding-left: 20px;
-  display:inline-block;
-}
-
-.receipe-name span {
-  display: inline-block;
+  display:table-cell;
 }
 
 .receipe-number {
@@ -980,6 +975,7 @@ input[type="text"] {
   color: #B5ADAD;
   border-radius: 50%;
   font-size: 12px;
+  margin: 30px;
 }
 
 .list{
@@ -988,9 +984,33 @@ input[type="text"] {
   padding-left: 10px;
   padding-right: 10px;
   height: 200px;
+  margin-top: 30px;
 }
 
 ul{
   padding-left: 10px;
 }
 
+.btn {
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #f0a7a7;
+  color: #f0a7a7;
+  text-decoration: none;
+  padding: 9px 25px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestion {
+  width:70%;
+  text-align: center;
+  font-size: large;
+}
+
+.receipe_note {
+  width:30%;
+  text-align: center;
+  font-size: large;
+}

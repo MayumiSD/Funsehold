@@ -13,8 +13,12 @@
           <i class="fas fa-search"></i>
       </div>
     </div>
+    <ul>
+      <th class= "suggestion">提案</th>
+      <th class= "receipe_note">私のレシピノート</th>
+    </ul>
+
     <div class="suggest-list-container">
-        <ul>提案</ul>
         <div class="list">
             <div class="list-container">
                 <div class="info-container">
@@ -27,7 +31,6 @@
 
 
       <div class="favorite-list-container">
-          <ul>私のレシピノート</ul>
           <div class="list">
               <div class="list-container">
                   <div class="info-container">
