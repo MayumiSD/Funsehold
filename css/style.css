@@ -945,11 +945,11 @@ input[type="text"] {
   background-color: green;
   float: left;
 }
-;
+
 .favorite-list-container {
     width: 30%;
     background-color: gray;
-    float: right;
+    display:inline-block;
 }
 
 .info-container {
@@ -966,8 +966,8 @@ input[type="text"] {
 .receipe-name {
   font-size: 21px;
   color: #514c4c;
-  float: left;
-  margin-left: 20px;
+  padding-left: 20px;
+  display:inline-block;
 }
 
 .receipe-name span {

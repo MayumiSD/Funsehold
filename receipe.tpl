@@ -22,9 +22,7 @@
                         <div class="receipe-number">1</div>
                         <div class="receipe-name"><span>生姜焼き</span></div>
                     </div>
-                    <div class="btn-container">
                         <div class="loginbtn"><a class="btn hanten free_submit">作る</a></div>
-                    </div>
                 </div>
             </div>
         </div>
