@@ -1012,6 +1012,6 @@ input[type="text"] {
   display:flex;
 }
 
-#report-container2{
+div#report-container2 {
   height: 60%;
 }
