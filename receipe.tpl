@@ -20,12 +20,10 @@
                 <div class="info-container">
                     <div class="number-container">
                         <div class="receipe-number">1</div>
-                    </div>
-                    <div class="receipe-name">
-                        <span>生姜焼き</span>
+                        <div class="receipe-name"><span>生姜焼き</span></div>
                     </div>
                     <div class="btn-container">
-                        <div class="loginbtn"><a href="/register.php" class="btn hanten free_submit">作る</a></div>
+                        <div class="loginbtn"><a class="btn hanten free_submit">作る</a></div>
                     </div>
                 </div>
             </div>
@@ -38,9 +36,7 @@
                   <div class="info-container">
                       <div class="number-container">
                           <div class="receipe-number">1</div>
-                      </div>
-                      <div class="receipe-name">
-                          <span>生姜焼き</span>
+                          <div class="receipe-name"><span>生姜焼き</span></div>
                       </div>
                   </div>
               </div>
