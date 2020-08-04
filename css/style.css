@@ -937,6 +937,7 @@ input[type="text"] {
   padding-bottom: 10px;
   border-bottom: 1px solid #979797;
   display: flex;
+  height: 200%;
 }
 
 .suggest-list-container{
@@ -946,9 +947,9 @@ input[type="text"] {
 }
 
 .favorite-list-container {
-    display: inline-block;  
     width: 30%;
     background-color: gray;
+    float: right;
 }
 
 .favorite-list-container
@@ -990,5 +991,10 @@ input[type="text"] {
   overflow-y: scroll;
   padding-left: 10px;
   padding-right: 10px;
+  height: 200px;
+}
+
+ul{
+  padding-left: 10px;
 }
 
