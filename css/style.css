@@ -951,10 +951,15 @@ input[type="text"] {
     background-color: gray;
 }
 
+.suggest-list-container .favorite-list-container h2 {
+  text-align: center;
+}
+
 .info-container {
   flex-grow: 1;
   width:70%;
   display:table;
+  margin: 10px;
 
 }
 
@@ -963,6 +968,7 @@ input[type="text"] {
   color: #514c4c;
   padding-left: 20px;
   display:table-cell;
+  padding-left: 30px;
 }
 
 .receipe-number {
@@ -975,7 +981,7 @@ input[type="text"] {
   color: #B5ADAD;
   border-radius: 50%;
   font-size: 12px;
-  margin: 30px;
+  margin-left:auto;
 }
 
 .list{
@@ -983,7 +989,7 @@ input[type="text"] {
   overflow-y: scroll;
   padding-left: 10px;
   padding-right: 10px;
-  height: 200px;
+  height: 80%;
   margin-top: 30px;
 }
 
