@@ -901,6 +901,7 @@ input[type="text"] {
   height: 60px;
   background-color: #454E53;
   display: flex;
+  width:80%;
 }
 
 .search-container .search {
@@ -1007,6 +1008,10 @@ input[type="text"] {
 }
 
 
-.report-container{
+.report-container1{
   display:flex;
+}
+
+#report-container2{
+  height: 60%;
 }
