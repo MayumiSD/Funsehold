@@ -176,7 +176,7 @@ header .loginbtn {
   margin-right: 10px;
 }
 
-.btn {
+header body .btn {
   text-align: center;
   border-radius: 20px;
   border: 2px solid #f0a7a7;
@@ -188,7 +188,7 @@ header .loginbtn {
   font-weight: 700;
 }
 
-.hanten {
+header body .hanten {
   color: #fff!important;
   background: #f0a7a7!important;
 }
@@ -943,7 +943,7 @@ input[type="text"] {
 .suggest-list-container{
   width: 70%;
   background-color: green;
-  float: left;
+  display:inline-block;
 }
 
 .favorite-list-container {
@@ -954,6 +954,8 @@ input[type="text"] {
 
 .info-container {
   flex-grow: 1;
+  width:70%;
+
 }
 
 .number-container {
