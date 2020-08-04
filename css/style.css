@@ -1008,6 +1008,10 @@ input[type="text"] {
 }
 
 
-.report-container1{
+.report-container{
   display:flex;
+}
+
+div#report-container2 {
+  height: 60%;
 }
