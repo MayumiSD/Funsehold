@@ -13,30 +13,30 @@
           <i class="fas fa-search"></i>
       </div>
     </div>
-    <ul>
-      <th class= "suggestion">提案</th>
-      <th class= "receipe_note">私のレシピノート</th>
-    </ul>
 
-    <div class="suggest-list-container">
-        <div class="list">
-            <div class="list-container">
-                <div class="info-container">
-                  <div class="receipe-number">1</div>
-                  <div class="receipe-name"><span>生姜焼き</span></div>
-                  <div class="loginbtn"><a class="btn free_submit">作る</a></div>
+        <div class= "suggestion"><h2 class ="receipePage">提案</h2></div>
+        <div class= "receipe_note"><h2 class ="receipePage">私のレシピノート</h2></div>
+    <div class="receipe-nave">
+        <div class="suggest-list-container">
+            <div class="list">
+                <div class="list-container">
+                    <div class="info-container">
+                      <div class="receipe-number">1</div>
+                      <div class="receipe-name"><span>生姜焼き</span></div>
+                      <div class="loginbtn"><a class="btn">作る</a></div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-      <div class="favorite-list-container">
-          <div class="list">
-              <div class="list-container">
-                  <div class="info-container">
-                    <div class="receipe-number">1</div>
-                    <div class="receipe-name"><span>生姜焼き</span></div>
+          <div class="favorite-list-container">
+              <div class="list">
+                  <div class="list-container">
+                      <div class="info-container">
+                        <div class="receipe-number">1</div>
+                        <div class="receipe-name"><span>生姜焼き</span></div>
+                      </div>
                   </div>
               </div>
-          </div>
-        </div>
+            </div>
+
+    </div>
