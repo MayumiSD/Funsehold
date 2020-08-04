@@ -1005,16 +1005,11 @@ ul{
 
 .suggestion {
   width:70%;
-  display: inline;
+  display: inline-block;
+  text-align: center;
 }
 
 .receipe_note {
   width:30%;
-}
-.receipePage h2 {
   text-align: center;
-}
-
-.receipe-nave {
-  display: flex;
 }

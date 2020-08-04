@@ -14,8 +14,8 @@
       </div>
     </div>
 
-        <div class= "suggestion"><h2 class ="receipePage">提案</h2></div>
-        <div class= "receipe_note"><h2 class ="receipePage">私のレシピノート</h2></div>
+        <div class= "suggestion">提案</div>
+        <div class= "receipe_note">私のレシピノート</div>
     <div class="receipe-nave">
         <div class="suggest-list-container">
             <div class="list">
