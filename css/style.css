@@ -1013,3 +1013,11 @@ ul{
   width:30%;
   text-align: center;
 }
+
+.report-container{
+  display:flex;
+}
+
+.receipe-navi li {
+  display:inline-block;
+}
