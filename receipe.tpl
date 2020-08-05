@@ -14,12 +14,13 @@
       </div>
     </div>
 
-    <div class= "fh5co-parallax" id="report-container1">
+<div class="fh5co-parallax" data-stellar-background-ratio="0.5">
+    <div class= "report-container" id="report-container1">
       <div class="suggest-list-container"><h2>提案</h2></div>
       <div class="favorite-list-container"><h2>私のレシピノート</h2></div>
     </div>
 
-    <div class="fh5co-parallax" id="report-container2">
+    <div class="report-container" id="report-container2">
         <div class="suggest-list-container">
             <div class="list">
                 <div class="list-container">
@@ -41,6 +42,7 @@
                   </div>
               </div>
             </div>
-    </div>
+      </div>
+</div>
 
 {include file ='footer.tpl'}
