@@ -16,8 +16,8 @@
 
 <div class="fh5co-parallax" data-stellar-background-ratio="0.5">
     <div class= "report-container" id="report-container1">
-      <div class="suggest-list-container"><h2>提案</h2></div>
-      <div class="favorite-list-container"><h2>私のレシピノート</h2></div>
+      <div class="suggest-list-container"><a>"提案""</a></div>
+      <div class="favorite-list-container"><a>私のレシピノート""</a></div>
     </div>
 
     <div class="report-container" id="report-container2">
@@ -38,6 +38,7 @@
                       <div class="info-container">
                         <div class="receipe-number">1</div>
                         <div class="receipe-name"><span>生姜焼き</span></div>
+                        <div class="loginbtn"><a class="star">星</a></div>
                       </div>
                   </div>
               </div>
