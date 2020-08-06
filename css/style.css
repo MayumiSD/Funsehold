@@ -986,6 +986,7 @@ input[type="text"] {
   border-radius: 50%;
   font-size: 12px;
   margin-left:auto;
+  margin-bottom: 10px;
 }
 
 .list{

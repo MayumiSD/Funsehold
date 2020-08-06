@@ -33,23 +33,29 @@
                         {/for}
 
                       <div class="receipe-name"><span>生姜焼き</span></div>
+
+                      {section name=counter loop=10}
                       <div class="loginbtn"><a class="btn">作る</a></div>
+                      {/section}
+
                     </div>
                 </div>
             </div>
         </div>
           <div class="favorite-list-container">
               <div class="list">
-                {for $favoriteIndex=1 to 10}
                   <div class="list-container">
                       <div class="info-container">
+
+                        {for $i=1 to 10}
                         <div class="receipe-number">
-                            {$favoriteIndex}
+                            {$i}
                         </div>
+                          {/for}
+
                         <div class="receipe-name"><span>生姜焼き</span></div>
                         <div class="loginbtn"><a class="star">★</a></div>
                       </div>
-                    {/for}
                   </div>
               </div>
             </div>
