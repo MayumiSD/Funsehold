@@ -35,7 +35,7 @@
                       <div class="receipe-name"><span>生姜焼き</span></div>
 
                       {section name=counter loop=10}
-                      <div class="loginbtn"><a class="btn">作る</a></div>
+                      <div class="loginbtn"><a class="btn" id="go">作る</a></div>
                       {/section}
 
                     </div>

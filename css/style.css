@@ -1008,6 +1008,9 @@ input[type="text"] {
   font-weight: 700;
 }
 
+#go {
+  padding:3px;
+}
 
 .report-container{
   display:flex;
