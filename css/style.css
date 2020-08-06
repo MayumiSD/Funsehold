@@ -172,6 +172,10 @@ header .fh5co-login{
   display: flex;
 }
 
+header .fh5co-welcome{
+  margin-left: 50%
+}
+
 header .loginbtn {
   margin-right: 10px;
 }
@@ -1013,8 +1017,3 @@ div#report-container2 {
   height: 60%;
 }
 
-.login {
-  margin-left: 50%;
-  display: flex;
-
-}

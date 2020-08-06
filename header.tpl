@@ -11,8 +11,8 @@
       </div>
         {else}
         <!-- ログインした時 -->
+          <div class="fh5co-welcome"><a>ようこそ<br>{$smarty.session.NAME}さん</a></div>
           <div class="fh5co-login">
-            <div class="login"><a>ようこそ{$smarty.session.NAME}さん</a></div>
             <div class="loginbtn"><a href="/logout.php" class="btn">ログアウト</a></div>
           </div>
         {/if}
