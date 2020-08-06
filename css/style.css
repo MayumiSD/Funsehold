@@ -173,7 +173,8 @@ header .fh5co-login{
 }
 
 header .fh5co-welcome{
-  margin-left: 50%
+  line-height: 36px;
+  margin-left: 50%;
 }
 
 header .loginbtn {

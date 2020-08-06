@@ -17,7 +17,7 @@
 <div class="fh5co-parallax" data-stellar-background-ratio="0.5">
     <div class= "report-container" id="report-container1">
       <div class="suggest-list-container"><a>提案</a></div>
-      <div class="favorite-list-container"><a>私のレシピノート</a></div>
+      <div class="favorite-list-container"><a>私のお気に入りレシピ</a></div>
     </div>
 
     <div class="report-container" id="report-container2">
@@ -25,7 +25,11 @@
             <div class="list">
                 <div class="list-container">
                     <div class="info-container">
-                      <div class="receipe-number">1</div>
+                      <div class="receipe-number">
+                        {for $receipeIndex=1 to 10}
+                          {$receipeIndex}
+                        {/for}
+                      </div>
                       <div class="receipe-name"><span>生姜焼き</span></div>
                       <div class="loginbtn"><a class="btn">作る</a></div>
                     </div>
@@ -36,7 +40,11 @@
               <div class="list">
                   <div class="list-container">
                       <div class="info-container">
-                        <div class="receipe-number">1</div>
+                        <div class="receipe-number">
+                          {for $favoriteIndex=1 to 10}
+                            {$favoriteIndex}
+                          {/for}
+                        </div>
                         <div class="receipe-name"><span>生姜焼き</span></div>
                         <div class="loginbtn"><a class="star">★</a></div>
                       </div>
