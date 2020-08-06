@@ -25,11 +25,13 @@
             <div class="list">
                 <div class="list-container">
                     <div class="info-container">
+
+                      {for $i=1 to 10}
                       <div class="receipe-number">
-                        {for $receipeIndex=1 to 10}
-                          {$receipeIndex}
-                        {/for}
+                          {$i}
                       </div>
+                        {/for}
+
                       <div class="receipe-name"><span>生姜焼き</span></div>
                       <div class="loginbtn"><a class="btn">作る</a></div>
                     </div>
@@ -38,16 +40,16 @@
         </div>
           <div class="favorite-list-container">
               <div class="list">
+                {for $favoriteIndex=1 to 10}
                   <div class="list-container">
                       <div class="info-container">
                         <div class="receipe-number">
-                          {for $favoriteIndex=1 to 10}
                             {$favoriteIndex}
-                          {/for}
                         </div>
                         <div class="receipe-name"><span>生姜焼き</span></div>
                         <div class="loginbtn"><a class="star">★</a></div>
                       </div>
+                    {/for}
                   </div>
               </div>
             </div>

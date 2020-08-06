@@ -992,10 +992,8 @@ input[type="text"] {
   flex-grow: 1;
   padding-left: 10px;
   padding-right: 10px;
-  height: 40%;
-  margin-top: 30px;
+  height: 70%;
 }
-
 
 .btn {
   text-align: center;
