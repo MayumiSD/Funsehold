@@ -3,9 +3,7 @@ session_start();
 
 require './vendor/autoload.php';
 $suggestionReceipe = getReceipeName();
-for ($i =0; $i<5; $i++){
-    echo $suggestionReceipe;
-}
+echo $suggestionReceipe;
 
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
@@ -19,7 +17,7 @@ function getReceipeName (){
             $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $stmt = $pdo->prepare('SELECT * FROM receipe ');
             $stmt->execute();
-            $row =$stmt->fetch(PDO::FETCH_ASSOC);
-                $suggestionReceipe =$row['receipe_name'];
+            $row =$stmt->fetchAll();
+                $suggestionReceipe =$row;
             return $suggestionReceipe;
 }
