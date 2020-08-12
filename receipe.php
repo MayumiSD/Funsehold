@@ -17,8 +17,10 @@ function getReceipeName (){
             $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $sql = 'SELECT * FROM receipe ';
             $stmt=$pdo->query($sql);
-            $row = $stmt->fetchAll(PDO::FETCH_COLUMN);
-
-            $suggestionReceipe = $row['receipe_name'];
+            $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $rowlist=[];
+            foreach($row as $value){
+                $rowlist[$value['receipe_name']]= $suggestionReceipe;
+            }
             return $suggestionReceipe;
 }
