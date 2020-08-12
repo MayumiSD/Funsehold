@@ -3,8 +3,8 @@ session_start();
 
 require './vendor/autoload.php';
 $suggestionReceipe = getReceipeName();
-foreach ($suggestionReceipe as $value)
-echo $value;
+foreach ($suggestionReceipe as $value){
+echo $value;}
 
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
