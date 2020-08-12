@@ -19,6 +19,6 @@ function getReceipeName (){
             $stmt->execute();
             $row = $stmt->fetchAll();
 
-            $suggestionReceipe = $row['receipe_name'];
+            $suggestionReceipe = $row[];
             return $suggestionReceipe;
 }
