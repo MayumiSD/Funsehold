@@ -3,8 +3,8 @@ session_start();
 
 require './vendor/autoload.php';
 $suggestionReceipe = getReceipeName();
-foreach ($suggestionReceipe as $value){
-    echo $value;
+for ($i =0; $i<5; $i++){
+    echo $suggestionReceipe;
 }
 
 $smarty = new Smarty();
