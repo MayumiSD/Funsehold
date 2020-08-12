@@ -20,5 +20,5 @@ function getReceipeName (){
             foreach ($stmt as $row){
                 $suggestionReceipe =$row['receipe_name'];
             }
-            echo $suggestionReceipe;
+            return $suggestionReceipe;
 }
