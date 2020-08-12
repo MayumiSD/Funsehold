@@ -15,12 +15,10 @@ function getReceipeName (){
             // 接続先DBリンク
             $connect = "mysql:host={$dsn['host']};dbname={$dsn['dbnm']}";
             $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
-            $sql = 'SELECT * FROM receipe ';
-            $stmt=$pdo->query($sql);
-            $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
-            $rowlist=[];
-            foreach($row as $value){
-                $rowlist[$value['receipe_name']]= $suggestionReceipe;
-            }
+            $stmt = $pdo->prepare('SELECT * FROM receipe ');
+            $stmt->execute();
+            $row = $stmt->fetchALL(PDO::FETCH_FUNC,'receipe_name');
+
+            $suggestionReceipe = $row;
             return $suggestionReceipe;
 }
