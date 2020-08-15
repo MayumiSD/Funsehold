@@ -2,7 +2,8 @@
 session_start();
 
 require './vendor/autoload.php';
-getReceipeName();
+$suggestionReceipe = getReceipeName();
+echo $suggestionReceipe;
 
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
@@ -17,9 +18,7 @@ function getReceipeName (){
             $stmt = $pdo->prepare('SELECT * FROM receipe ');
             $stmt->execute();
             $row =$stmt->fetchAll(PDO::FECH_ASSOC);
-            foreach($row as $data){
-                $suggestionReceipe= $data['receipe_name'];
-                echo $suggestionReceipe;
-            }
+            $suggestionReceipe= $row['receipe_name'];
+            return $suggestionReceipe;
             
 }
