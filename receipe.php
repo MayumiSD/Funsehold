@@ -2,16 +2,11 @@
 session_start();
 
 require './vendor/autoload.php';
-foreach (getReceipeName() as $row){
-    echo $row['receipe_name'];
-}
-
-
+$suggestionReceipe = getReceipeName();
 
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
-
-
+$smarty->assign('suggestionReceipe',$suggestionReceipe);
 
 function getReceipeName (){
             require_once'DSN.php';
@@ -21,7 +16,8 @@ function getReceipeName (){
             $stmt = $pdo->prepare('SELECT * FROM receipe ');
             $stmt->execute();
             while ($row=$stmt->fetch(PDO::FETCH_ASSOC)){
-                yield $row;
+                yield $row['receipe_name'];
             }
+            echo $row['receipe_name']."\n";    
             
 }
