@@ -3,12 +3,11 @@ session_start();
 
 require './vendor/autoload.php';
 
-$suggestionReceipe = printReceipeName();
-$suggestionReceipe;
+$receipeName = getReceipeName();
 
 $smarty = new Smarty();
+$smarty->assign('receipeName',$receipeName);
 $smarty->display('receipe.tpl');
-$smarty->assign('receipeName',$suggestionReceipe);
 
 
 function getReceipeName (){
@@ -22,10 +21,4 @@ function getReceipeName (){
                 yield $row;
             }
             
-}
-
-function printReceipeName(){
-    foreach (getReceipeName() as $row){
-        echo $row['receipe_name']."\n";
-    }
 }
