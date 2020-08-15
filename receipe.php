@@ -20,6 +20,7 @@ function getReceipeName (){
             $row =$stmt->fetchAll();
             foreach($row as $data){
                 $suggestionReceipe= $data['receipe_name'];
+                return $suggestionReceipe;
             }
-            return $suggestionReceipe;
+            
 }
