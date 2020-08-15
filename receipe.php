@@ -18,7 +18,8 @@ function getReceipeName (){
             $stmt = $pdo->prepare('SELECT * FROM receipe ');
             $stmt->execute();
             $row =$stmt->fetchAll();
-            $suggestionReceipe= $row['receipe_name'];
-            return $suggestionReceipe;
+            foreach($row as $data){
+                $suggestionReceipe= $data['receipe_name'];
+            }
             
 }
