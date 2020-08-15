@@ -2,8 +2,8 @@
 session_start();
 
 require './vendor/autoload.php';
-$suggestionReceipe = getReceipeName();
-echo $suggestionReceipe;
+getReceipeName();
+
 
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
@@ -20,6 +20,7 @@ function getReceipeName (){
             $row =$stmt->fetchAll();
             foreach($row as $data){
                 $suggestionReceipe= $data['receipe_name'];
+                echo $suggestionReceipe;
             }
             
 }
