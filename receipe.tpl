@@ -53,7 +53,7 @@
                         </div>
                           {/for}
 
-                        <div class="receipe-name"><span>生姜焼き</span></div>
+                        <div class="receipe-name"><span>{$suggetionReceipe}</span></div>
                         <div class="loginbtn"><a class="star">★</a></div>
                       </div>
                   </div>
