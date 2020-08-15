@@ -3,6 +3,7 @@ session_start();
 
 require './vendor/autoload.php';
 $suggestionReceipe = getReceipeName();
+echo $suggetionReceipe;
 
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
