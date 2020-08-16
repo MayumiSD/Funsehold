@@ -18,9 +18,8 @@ function getReceipeName (){
             $stmt->execute();
             while ($row=$stmt->fetch(PDO::FETCH_ASSOC)){
                 yield $row;
-                $receipeName=$row['receipe_name'];
             }
-            foreach ($receipeName as $i)   
-            echo $i.'<br>';
+            foreach ($row as $receipeName)   
+            echo $receipeName['receipe_name'].'<br>';
             
 }
