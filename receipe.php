@@ -1,7 +1,9 @@
 <?php
 session_start();
 $receipeName = getReceipeName();
-echo $receipeName;
+foreach ($receipeName as $i) {
+    echo $i;
+}
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
