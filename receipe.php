@@ -1,10 +1,6 @@
 <?php
 session_start();
 $receipeName = getReceipeName();
-foreach ($receipeName as $row){
-    echo $row['receipe_name'];
-}
-
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
@@ -19,8 +15,10 @@ function getReceipeName (){
             $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $stmt = $pdo->prepare('SELECT * FROM receipe ');
             $stmt->execute();
+
+            $item = array();
             while ($row=$stmt->fetch(PDO::FETCH_ASSOC)){
-                yield $row;
+                $item[]= $receipeName;
             }
             
 }
