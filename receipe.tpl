@@ -32,7 +32,9 @@
                       </div>
                         {/for}
 
-                      <div class="receipe-name"><span>{$receipeName}</span></div>
+                      {section name=receipe loop=$receipeName}
+                      <div class="receipe-name"><span>{$receipeName[receipe].receipe_name}<br></span></div>
+                      {/section}
 
                       {section name=counter loop=10}
                       <div class="loginbtn"><a class="btn" id="go">作る</a></div>
@@ -53,7 +55,9 @@
                         </div>
                           {/for}
 
+                        {section name=receipe loop=$receipeName}
                         <div class="receipe-name"><span>{$receipeName}</span></div>
+                        {/section}
 
                         <div class="loginbtn"><a class="star">★</a></div>
                       </div>
