@@ -1,10 +1,10 @@
 <?php
 session_start();
-
+$receipeName = getReceipeName();
+$receipeName;
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
-$receipeName = getReceipeName();
 $smarty->assign('receipeName',$receipeName);
 $smarty->display('receipe.tpl');
 
@@ -18,6 +18,8 @@ function getReceipeName (){
             $stmt->execute();
             while ($row=$stmt->fetch(PDO::FETCH_ASSOC)){
                 yield $row;
+                $receipeName=$row['receipe_name'];
             }
+                echo $receipeName.'<br>';
             
 }
