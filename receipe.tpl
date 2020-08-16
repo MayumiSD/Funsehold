@@ -32,9 +32,13 @@
                       </div>
                         {/for}
 
-                      {foreach $receipeName as $row}
-                      <div class="receipe-name"><span>{$row.receipe_name}<br></span></div>
-                      {/foreach}
+
+                      <div class="receipe-name">
+                        {foreach $receipeName as $row}
+                        <span>{$row.receipe_name}</span>
+                        {/foreach}
+                      </div>
+
 
                       {section name=counter loop=10}
                       <div class="loginbtn"><a class="btn" id="go">作る</a></div>
@@ -55,9 +59,13 @@
                         </div>
                           {/for}
 
-                        {foreach $receipeName as $row}
-                        <div class="receipe-name"><span>{$row.receipe_name|escape}</span></div>
-                        {/foreach}
+
+                        <div class="receipe-name">
+                          {foreach $receipeName as $row}
+                          <span>{$row.receipe_name|escape}</span>
+                          {/foreach}
+                        </div>
+
 
                         <div class="loginbtn"><a class="star">★</a></div>
                       </div>
