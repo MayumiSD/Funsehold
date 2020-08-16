@@ -20,6 +20,7 @@ function getReceipeName (){
                 yield $row;
                 $receipeName=$row['receipe_name'];
             }
-                echo $receipeName.'<br>';
+            foreach ($receipeName as $i)   
+            echo $i.'<br>';
             
 }
