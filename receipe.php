@@ -19,7 +19,7 @@ function getReceipeName (){
 
             $item = array();
             while ($row=$stmt->fetch(PDO::FETCH_ASSOC)){
-                $item[]= $receipeName;
+                $item[]=$row;
             }
             
 }
