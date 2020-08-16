@@ -1,14 +1,9 @@
 <?php
 session_start();
 
-require './vendor/autoload.php';
-
 $receipeName = getReceipeName();
-foreach ($receipeName as $row) {
-    echo $row['receipe_name'].'<br>';
-}
 
-
+require './vendor/autoload.php';
 $smarty = new Smarty();
 $smarty->assign('receipeName',$receipeName);
 $smarty->display('receipe.tpl');
