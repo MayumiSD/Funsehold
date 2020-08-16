@@ -4,6 +4,10 @@ session_start();
 require './vendor/autoload.php';
 
 $receipeName = getReceipeName();
+foreach ($receipeName as $row) {
+    echo $row['receipe_name'].'<br>';
+}
+
 
 $smarty = new Smarty();
 $smarty->assign('receipeName',$receipeName);
