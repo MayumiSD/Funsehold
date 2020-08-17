@@ -5,9 +5,8 @@ $receipeName = getReceipeName();
 require './vendor/autoload.php';
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
-// $smarty->assign('receipeName',$receipeName);
-// $smarty->debugging = true; デバック
-$smarty->error_reporting = E_ALL & ~E_NOTICE;
+$smarty->assign('name','world')
+$smarty->assign('receipeName',$receipeName);
 
 
 function getReceipeName (){
