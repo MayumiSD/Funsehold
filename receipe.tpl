@@ -1,6 +1,6 @@
 {include file='head.tpl'}
 {include file='header.tpl'}
-
+{$receipeName|default:'&nbsp;'}
 
     <div class="search-container">
       <div class="search">
