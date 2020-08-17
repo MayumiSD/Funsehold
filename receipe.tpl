@@ -1,6 +1,7 @@
 {include file='head.tpl'}
 {include file='header.tpl'}
 
+{$receipeName}
     <div class="search-container">
       <div class="search">
           <input id="receipe-input" type="text" placeholder="料理名、食材、目的で探す">

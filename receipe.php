@@ -1,6 +1,6 @@
 <?php
 session_start();
-$receipeName= getReceipeName();
+$receipeName = getReceipeName();
 foreach ($receipeName as $i){
     echo $i['receipe_name'];
 }
@@ -9,6 +9,7 @@ foreach ($receipeName as $i){
 require './vendor/autoload.php';
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
+$smarty->assign('receipeName',$receipeName);
 
 
 function getReceipeName (){
