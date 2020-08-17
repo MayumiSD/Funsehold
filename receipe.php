@@ -6,7 +6,8 @@ var_dump($receipeName);
 require './vendor/autoload.php';
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
-$smarty->assign('receipeName',$receipeName);
+// $smarty->assign('receipeName',$receipeName);
+$smarty->debugging = true;
 
 
 function getReceipeName (){
