@@ -2,11 +2,6 @@
 {include file='header.tpl'}
 {$receipeName|default:'&nbsp;'}
 
-{php}
-// assign した内容は $this->_tpl_vars に保存されている
-var_dump($this->_tpl_vars);
-{/php}
-
     <div class="search-container">
       <div class="search">
           <input id="receipe-input" type="text" placeholder="料理名、食材、目的で探す">
@@ -38,13 +33,17 @@ var_dump($this->_tpl_vars);
                       </div>
                         {/for}
 
-                      {foreach $receipeName as $receipe}
+                        {$receipeName|@var_dump}
+
                       <div class="receipe-name">
+                      {foreach $receipeName as $receipe}
                         {foreach $receipe as $row}
+                        {$row|@var_dump}
                         <span>{$row.receipe_name}</span>
                         {/foreach}
-                      </div>
                       {/foreach}
+                      </div>
+
 
                       {section name=counter loop=10}
                       <div class="loginbtn"><a class="btn" id="go">作る</a></div>
@@ -65,13 +64,15 @@ var_dump($this->_tpl_vars);
                         </div>
                           {/for}
 
-                        {foreach $receipeName as $receipe}
+
                         <div class="receipe-name">
+                        {foreach $receipeName as $receipe}
                           {foreach $receipe as $row}
                           <span>{$row.receipe_name}</span>
                           {/foreach}
-                        </div>
                         {/foreach}
+                        </div>
+
 
                         <div class="loginbtn"><a class="star">★</a></div>
                       </div>
