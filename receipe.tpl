@@ -1,6 +1,5 @@
 {include file='head.tpl'}
 {include file='header.tpl'}
-{$receipeName|default:'&nbsp;'}
 
     <div class="search-container">
       <div class="search">
@@ -17,7 +16,7 @@
 
 <div class="fh5co-parallax" data-stellar-background-ratio="0.5">
     <div class= "report-container" id="report-container1">
-      <div class="suggest-list-container"><a>提案</a></div>
+      <div class="suggest-list-container"><a>提案{$name}</a></div>
       <div class="favorite-list-container"><a>私のお気に入りレシピ</a></div>
     </div>
 
@@ -35,7 +34,6 @@
 
                       <div class="receipe-name">
                       {foreach $receipeName as $receipe}
-                        {foreach $receipe as $row}
                         <span>{$row.receipe_name}</span>
                         {/foreach}
                       {/foreach}
