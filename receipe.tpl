@@ -2,6 +2,11 @@
 {include file='header.tpl'}
 {$receipeName|default:'&nbsp;'}
 
+{php}
+// assign した内容は $this->_tpl_vars に保存されている
+var_dump($this->_tpl_vars);
+{/php}
+
     <div class="search-container">
       <div class="search">
           <input id="receipe-input" type="text" placeholder="料理名、食材、目的で探す">
