@@ -22,6 +22,6 @@ function getReceipeName (){
 
             while ($row=$stmt->fetch(PDO::FETCH_ASSOC)){
                 yield $row;
-                $smarty->append('receipeName',$row); 
-            }            
+            }    
+            $smarty->append('receipeName',$row);         
 }
