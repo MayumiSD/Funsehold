@@ -34,9 +34,9 @@
 
 
                       <div class="receipe-name">
-                        {foreach $receipeName as $row}
-                        <span>{$row.receipe_name}</span>
-                        {/foreach}
+                        <!-- {foreach $receipeName as $row} -->
+                        <span>生姜焼き</span>
+                        <!-- {/foreach} -->
                       </div>
 
 
@@ -61,9 +61,9 @@
 
 
                         <div class="receipe-name">
-                          {foreach $receipeName as $row}
-                          <span>{$row.receipe_name|escape}</span>
-                          {/foreach}
+                          <!-- {foreach $receipeName as $row} -->
+                          <span>生姜焼き</span>
+                          <!-- {/foreach} -->
                         </div>
 
 

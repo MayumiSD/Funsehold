@@ -9,7 +9,6 @@ foreach ($receipeName as $i){
 require './vendor/autoload.php';
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
-$receipeName;
 
 
 function getReceipeName (){
@@ -22,6 +21,5 @@ function getReceipeName (){
 
             while ($row=$stmt->fetch(PDO::FETCH_ASSOC)){
                 yield $row;
-            }    
-            $smarty->append('receipeName',$row);         
+            }            
 }
