@@ -35,9 +35,9 @@
 
 
                       <div class="receipe-name">
-                        <!-- {foreach $receipeName as $row} -->
-                        <span>{$receipeName}</span>
-                        <!-- {/foreach} -->
+                        {foreach from =$receipeName item=row}
+                        <span>[receipe_name]=>{$row.receipe_name}<br /></span>
+                        {/foreach}
                       </div>
 
 
@@ -62,9 +62,9 @@
 
 
                         <div class="receipe-name">
-                          <!-- {foreach $receipeName as $row} -->
-                          <span>生姜焼き</span>
-                          <!-- {/foreach} -->
+                          {foreach from =$receipeName item=row}
+                          <span>[receipe_name]=>{$row.receipe_name}<br /></span>
+                          {/foreach}
                         </div>
 
 
