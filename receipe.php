@@ -8,8 +8,8 @@ foreach ($receipeName as $i){
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
-$smarty->assign('receipeName',$receipeName);
 $smarty->display('receipe.tpl');
+$smarty->assign('receipeName',$receipeName);
 
 
 function getReceipeName (){
@@ -21,7 +21,6 @@ function getReceipeName (){
             $stmt->execute();
 
             while ($row=$stmt->fetch(PDO::FETCH_ASSOC)){
-                yield $row;
-            }
-            
+                $receipeName[]=$row;
+            }            
 }
