@@ -33,10 +33,10 @@
                       </div>
                         {/for}
 
-                      {foreach from =$receipeName item='receipeName'}
+                      {foreach $receipeName as $receipe}
                       <div class="receipe-name">
-                        {foreach from =$receipeName item='row'}
-                        <span> - {$row.receipe_name} - <br /></span>
+                        {foreach $receipe as $row}
+                        <span>{$row.receipe_name}</span>
                         {/foreach}
                       </div>
                       {/foreach}
@@ -60,10 +60,10 @@
                         </div>
                           {/for}
 
-                        {foreach from =$receipeName item='receipeName'}
+                        {foreach $receipeName as $receipe}
                         <div class="receipe-name">
-                          {foreach from =$receipeName item='row'}
-                          <span> - {$row.receipe_name} - <br /></span>
+                          {foreach $receipe as $row}
+                          <span>{$row.receipe_name}</span>
                           {/foreach}
                         </div>
                         {/foreach}
