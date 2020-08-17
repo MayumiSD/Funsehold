@@ -1,13 +1,13 @@
 <?php
 session_start();
 $receipeName = getReceipeName();
-var_dump($receipeName);
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
 $smarty->display('receipe.tpl');
 // $smarty->assign('receipeName',$receipeName);
-$smarty->debugging = true;
+// $smarty->debugging = true; デバック
+$smarty->error_reporting = E_ALL & ~E_NOTICE;
 
 
 function getReceipeName (){
