@@ -1,7 +1,7 @@
 <?php
 session_start();
 $receipeName = getReceipeName();
-echo $receipeName;
+var_dump($receipeName);
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
