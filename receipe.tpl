@@ -36,7 +36,6 @@
                       {foreach $receipeName as $receipe}
                         <span>{$row.receipe_name}</span>
                         {/foreach}
-                      {/foreach}
                       </div>
 
 
