@@ -33,12 +33,9 @@
                       </div>
                         {/for}
 
-                        {$receipeName|@var_dump}
-
                       <div class="receipe-name">
                       {foreach $receipeName as $receipe}
                         {foreach $receipe as $row}
-                        {$row|@var_dump}
                         <span>{$row.receipe_name}</span>
                         {/foreach}
                       {/foreach}
