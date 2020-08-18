@@ -63,7 +63,6 @@
                         {foreach $receipeName as $receipe}
                           <span>{$receipe.receipe_name}</span>
                           {/foreach}
-                        {/foreach}
                         </div>
 
 
