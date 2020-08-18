@@ -29,12 +29,12 @@
                       <table>
                         {foreach $receipeName as $receipe}
                         <tr>
-                          <td>{$receipe@iteration}</td>
-                          <td>{$receipe.receipe_name}</td>
+                          <td class="receipe-number">{$receipe@iteration}</td>
+                          <td class="receipe-name">{$receipe.receipe_name}</td>
                           <td><div class="loginbtn"><a class="btn" id="go">作る</a></div></td>
                         </tr>
                         {/foreach}
-                      </table>                
+                      </table>
 
                     </div>
                 </div>
