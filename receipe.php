@@ -6,10 +6,10 @@ var_dump($receipeName);
 require './vendor/autoload.php';
 $smarty = new Smarty();
 
-$smarty->display('receipe.tpl');
+
 $smarty->assign('name','world');
 $smarty->assign('receipeName',$receipeName);
-
+$smarty->display('receipe.tpl');
 
 function getReceipeName (){
             require_once'DSN.php';

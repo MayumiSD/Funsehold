@@ -34,7 +34,7 @@
 
                       <div class="receipe-name">
                       {foreach $receipeName as $receipe}
-                        <span>{$row.receipe_name}</span>
+                        <span>{$receipeName.receipe_name}</span>
                         {/foreach}
                       </div>
 
