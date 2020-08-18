@@ -1,9 +1,11 @@
 <?php
 session_start();
 $receipeName = getReceipeName();
+var_dump($receipeName);
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
+
 $smarty->display('receipe.tpl');
 $smarty->assign('name','world');
 $smarty->assign('receipeName',$receipeName);
