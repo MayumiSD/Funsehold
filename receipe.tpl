@@ -26,22 +26,15 @@
                 <div class="list-container">
                     <div class="info-container">
 
-                      {for $i=1 to 10}
-                      <div class="receipe-number">
-                          {$i}
-                      </div>
-                        {/for}
-
-                      <div class="receipe-name">
-                      {foreach $receipeName as $receipe}
-                        <span>{$receipe.receipe_name}</span><br />
+                      <table>
+                        {foreach $receipeName as $receipe}
+                        <tr>
+                          <td>{$receipe@iteration}</td>
+                          <td>{$receipe.receipe_name}</td>
+                          <td><div class="loginbtn"><a class="btn" id="go">作る</a></div></td>
+                        </tr>
                         {/foreach}
-                      </div>
-
-
-                      {section name=counter loop=10}
-                      <div class="loginbtn"><a class="btn" id="go">作る</a></div>
-                      {/section}
+                      </table>                
 
                     </div>
                 </div>
