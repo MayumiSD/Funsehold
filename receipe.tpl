@@ -26,7 +26,7 @@
                 <div class="list-container">
                     <div class="info-container">
 
-                      <table>
+                      <table style="width: 100%;">
                         {foreach $receipeName as $receipe}
                         <tr>
                           <td class="receipe-number">{$receipe@iteration}</td>
