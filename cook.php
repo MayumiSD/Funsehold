@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+echo $_GET["receipeid"]; 
+
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
