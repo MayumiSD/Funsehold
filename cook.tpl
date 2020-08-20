@@ -14,7 +14,7 @@
               </div>
             </div>
             <div class="holder-section">
-              <h3>料理名：</h3>
+              <h3>料理名：{$receipeInfo.receipe_name}</h3>
             </div>
         </div>
 
@@ -22,9 +22,9 @@
     <div class="row">
         <div class="holder-section">
            <h4>材料</h4>
-           <p>・・・・・・</p>
+           <p>{$receipeInfo.ingredient}</p>
            <h4>作り方</h4>
-           <p>・・・・・・・・・・・</p>
+           <p>{$receipeInfo.how_to_cook}</p>
         </div>
       </div>
 

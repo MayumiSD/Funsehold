@@ -7,7 +7,7 @@ var_dump($receipeInfo);
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
-
+$smarty->assign('receipeInfo',$receipeInfo);
 $smarty->display('cook.tpl');
 
 
