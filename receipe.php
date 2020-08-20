@@ -9,7 +9,6 @@ $smarty = new Smarty();
 $smarty->assign('receipeName',$receipeName);
 $smarty->assign('favoriteReceipe',$favoriteReceipe);
 $smarty->display('receipe.tpl');
-$smarty->display('cook.tpl');
 
 function getReceipeName (){
             require_once'DSN.php';
