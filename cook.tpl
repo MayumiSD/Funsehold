@@ -7,8 +7,7 @@
       <h2>献立レシピ・作り方</h2>
     </div>
 
-      <div class="row">
-        <div class="col-md-4 col-sm-6">
+        <div class="fh5co-services">
           <div class="fh5co-table2 fh5co-table2-color-4 text-center">
             <div class="fh5co-table-cell2">
               <i class="icon-mobile"></i>
@@ -16,8 +15,8 @@
           </div>
           <div class="holder-section">
             <h3>料理名：</h3>
+          </div>
         </div>
-      </div>
 
 
     <div class="row">
