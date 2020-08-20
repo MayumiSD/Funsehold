@@ -51,11 +51,11 @@
                         </div>
                           {/for}
                         <div class="receipe-name">
-                        {foreach $favoriteReceipe as $row}
-                          <span>{$row.receipe_name}</span><br />
+                        {foreach $receipeName as $receipe}
+                          <span>{$receipe.receipe_name}</span><br />
                           {/foreach}
                         </div>
-                        <div class="loginbtn"><a class="star">{$row.star}</a></div>
+                        <div class="loginbtn"><a class="star">★</a></div>
 
                       </div>
                   </div>
