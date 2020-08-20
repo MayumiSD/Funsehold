@@ -49,7 +49,7 @@
                           {foreach $favoriteReceipe as $favorite}
                           <tr>
                             <td class="receipe-number">{$favorite@iteration}</td>
-                            <td class="receipe-name">{if $favorite.receipe_id == $receipe.receipe_id}{$receipe.receipe_name}{/if}</td>
+                            <td class="receipe-name">{$favorite.receipe_id}</td>
                             <td><div class="loginbtn"><a class="star">{$favorite.star}</a></div></td>
                           </tr>
                           {/foreach}
