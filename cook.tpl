@@ -1,4 +1,4 @@
-{{include file='head.tpl'}
+{include file='head.tpl'}
 {include file='header.tpl'}
 
 <div id="fh5co-services-section">
@@ -8,14 +8,14 @@
     </div>
 
         <div class="fh5co-services">
-          <div class="fh5co-table2 fh5co-table2-color-4 text-center">
-            <div class="fh5co-table-cell2">
-              <i class="icon-mobile"></i>
+            <div class="fh5co-table2 fh5co-table2-color-4 text-center">
+              <div class="fh5co-table-cell2">
+                <i class="icon-mobile"></i>
+              </div>
             </div>
-          </div>
-          <div class="holder-section">
-            <h3>料理名：</h3>
-          </div>
+            <div class="holder-section">
+              <h3>料理名：</h3>
+            </div>
         </div>
 
 
@@ -27,7 +27,8 @@
            <p>・・・・・・・・・・・</p>
         </div>
       </div>
-    </div>
+
+  </div>
 </div>
 
 	{include file ='footer.tpl'}
