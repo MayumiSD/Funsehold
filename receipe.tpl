@@ -31,7 +31,7 @@
                         <tr>
                           <td class="receipe-number">{$receipe@iteration}</td>
                           <td class="receipe-name">{$receipe.receipe_name}</td>
-                          <td><div class="loginbtn"><a href="cook.php" class="btn" id="go">作る</a></div></td>
+                          <td><div class="loginbtn"><a href="cook.php?receipeid={$receipe.receipe_id}" class="btn" id="go">作る</a></div></td>
                         </tr>
                         {/foreach}
                       </table>
