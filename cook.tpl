@@ -5,8 +5,10 @@
  <div class="container">
     <div class="heading-section text-center">
       <h2>レシピ・作り方</h2>
-      <div class="fh5co-table-cell2">
-        <i class="icon-mobile"></i>
+      <div class="fh5co-table2 fh5co-table2-color-4 text-center">
+        <div class="fh5co-table-cell2">
+          <i class="icon-mobile"></i>
+        </div>
       </div>
       <h3>料理名：</h3>
     </div>
