@@ -28,9 +28,9 @@ function getFavoriteReceipe (){
     // 接続先DBリンク
     $connect = "mysql:host={$dsn['host']};dbname={$dsn['dbnm']}";
     $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
-    $stmt = $pdo->prepare('SELECT * FROM favorite_receipe ');
-    $stmt->execute();
+    $data = $pdo->prepare('SELECT * FROM favorite_receipe');
+    $data->execute();
 
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $data->fetchAll(PDO::FETCH_ASSOC);
 
 }

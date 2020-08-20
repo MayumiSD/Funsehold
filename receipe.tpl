@@ -45,15 +45,17 @@
                   <div class="list-container">
                       <div class="info-container">
 
-                        <table style="width: 100%;">
-                          {foreach $favoriteReceipe as $favorite}
-                          <tr>
-                            <td class="receipe-number">{$favorite@iteration}</td>
-                            <td class="receipe-name">{$favorite.receipe_id}</td>
-                            <td><div class="loginbtn"><a class="star">{$favorite.star}</a></div></td>
-                          </tr>
+                        {for $i=1 to 10}
+                        <div class="receipe-number">
+                            {$i}
+                        </div>
+                          {/for}
+                        <div class="receipe-name">
+                        {foreach $favoriteReceipe as $row}
+                          <span>{$row.receipe_name}</span><br />
                           {/foreach}
-                        </table>
+                        </div>
+                        <div class="loginbtn"><a class="star">{$row.star}</a></div>
 
                       </div>
                   </div>
