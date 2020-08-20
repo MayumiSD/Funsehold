@@ -16,7 +16,7 @@
 
 <div class="fh5co-parallax" data-stellar-background-ratio="0.5">
     <div class= "report-container" id="report-container1">
-      <div class="suggest-list-container"><a>提案{$name}</a></div>
+      <div class="suggest-list-container"><a>提案</a></div>
       <div class="favorite-list-container"><a>私のお気に入りレシピ</a></div>
     </div>
 
@@ -31,7 +31,7 @@
                         <tr>
                           <td class="receipe-number">{$receipe@iteration}</td>
                           <td class="receipe-name">{$receipe.receipe_name}</td>
-                          <td><div class="loginbtn"><a class="btn" id="go">作る</a></div></td>
+                          <td><div class="loginbtn"><a href="/cook.tpl" class="btn" id="go">作る</a></div></td>
                         </tr>
                         {/foreach}
                       </table>
@@ -45,21 +45,16 @@
                   <div class="list-container">
                       <div class="info-container">
 
-                        {for $i=1 to 10}
-                        <div class="receipe-number">
-                            {$i}
-                        </div>
-                          {/for}
-
-
-                        <div class="receipe-name">
-                        {foreach $receipeName as $receipe}
-                          <span>{$receipe.receipe_name}</span><br />
+                        <table style="width: 100%;">
+                          {foreach $favoriteReceipe as $favorite}
+                          <tr>
+                            <td class="receipe-number">{$favorite@iteration}</td>
+                            <td class="receipe-name">{if $favorite.receipe_id == $receipe.receipe_id}{$receipe.receipe_name}{/if}</td>
+                            <td><div class="loginbtn"><a class="star">{$favorite.star}</a></div></td>
+                          </tr>
                           {/foreach}
-                        </div>
+                        </table>
 
-
-                        <div class="loginbtn"><a class="star">★</a></div>
                       </div>
                   </div>
               </div>
