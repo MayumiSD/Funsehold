@@ -22,7 +22,9 @@
     <div class="row">
         <div class="holder-section">
            <h4>材料</h4>
-           <p>{$receipeInfo.ingredient}</p>
+           {foreach $ingredientInfo as $data}
+           <p>{$data}</p><br />
+           {/foreach}
            <h4>作り方</h4>
            <p>{$receipeInfo.how_to_cook}</p>
         </div>

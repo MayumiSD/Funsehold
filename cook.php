@@ -2,12 +2,14 @@
 session_start();
 
 $receipeInfo = getReceipeInfo($_GET["receipeid"]);
+$ingredientInfo = explode(",",$receipeInfo['ingredient']);
 var_dump($receipeInfo);
 
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
 $smarty->assign('receipeInfo',$receipeInfo);
+$smarty->assign('ingredientInfo',$ingredientInfo);
 $smarty->display('cook.tpl');
 
 
