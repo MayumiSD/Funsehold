@@ -3,8 +3,6 @@ session_start();
 
 $receipeInfo = getReceipeInfo($_GET["receipeid"]);
 $ingredientInfo = explode(",",$receipeInfo['ingredient']);
-var_dump($receipeInfo);
-
 
 require './vendor/autoload.php';
 $smarty = new Smarty();

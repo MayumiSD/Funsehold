@@ -56,12 +56,12 @@ $smarty->display('head.tpl');
 
 
     <body>
-        <a class="fh5co-logo">ログイン画面にようこそ</a>
-        <div class="container text-center">
-            <div class="fh5co-login">
-                <div class="fh5co-navbar-brand">    
+        <h3 class="fh5co-logo">ログイン画面にようこそ</h3>
+        <div class="overlay">
+            <div class="container">
+                <div class="row">    
                     <form id="loginForm" name="loginForm" action="" method="POST">
-                            <fieldset>
+                            <fieldsettable>
                                 <div><font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font></div>
                                 <label for="email">Email</label><input type="text" id="email" name="email" placeholder="Emailを入力" value="<?php if (!empty($_POST["email"])) {echo htmlspecialchars($_POST["email"], ENT_QUOTES);} ?>">
                                 <br>

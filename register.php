@@ -42,29 +42,13 @@ if (isset($_POST["signUp"])) {
         }
     }
 }
+
+require './vendor/autoload.php';
+$smarty = new Smarty();
+$smarty->display('head.tpl');
+
 ?>
 
-
-
-
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>新規登録|Funsehold</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="面倒くさがりな私のための家事ノート。レシピも日記も家計簿も一つのアプリにまとめちゃう" />
-        <meta name="keywords" content="家事, レシピ, 献立, 家計簿, 日記, 家事ノート, 買い物リスト" />
-
-
-        
-            <style>
-            label {
-                display:block;
-                float:left;
-                width:100px;
-            }</style>
-    </head>
     <body>
         <form id="loginForm" name="loginForm" action="" method="POST">
             <fieldset>

@@ -1407,6 +1407,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  margin-bottom: 2%;
 }
 
 a {
@@ -3084,9 +3085,10 @@ legend {
 
 label {
   display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: bold;
+    /* max-width: 100%; */
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 20%;
 }
 
 input[type="search"] {
