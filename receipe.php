@@ -25,8 +25,15 @@ function getReceipeName (){
      
 }
 
-function getFavoriteInfo($userid){
+if (isset($_SESSION["email"])){
+    require_once'DSN.php';
+        // 接続先DBリンク
+        $connect = "mysql:host={$dsn['host']};dbname={$dsn['dbnm']}";
+        $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
         $sql = $pdo->prepare('SELECT * FROM favorite_receipe where email = ?');
-        $sql->execute();
-        return $sql->fetchAll(PDO::FETCH_ASSOC);
-        }
+        $sql->execute($_SESSION);
+        $data = $sql->fetchAll(PDO::FETCH_ASSOC);
+        var_dump ($data);
+
+}
+        
