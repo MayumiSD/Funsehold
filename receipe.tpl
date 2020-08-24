@@ -49,7 +49,7 @@
                           {foreach $favoriteInfo as $row}
                           <tr>
                             <td class="receipe-number">{$row@iteration}</td>
-                            <td class="receipe-name">{$row.receipe_id}</td>
+                            <td class="receipe-name">{$row.receipe_name}</td>
                             <td>{$row.star}</td>
                             <td><div class="loginbtn"><a href="cook.php?receipeid={$row.receipe_id}" class="btn" id="go">作る</a></div></td>
                           </tr>

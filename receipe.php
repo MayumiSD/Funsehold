@@ -2,7 +2,6 @@
 session_start();
 $receipeName = getReceipeName();
 $favoriteInfo = getFavoriteInfo($_SESSION["email"]);
-var_dump($favoriteInfo);
 
 
 require './vendor/autoload.php';
