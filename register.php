@@ -50,21 +50,27 @@ $smarty->display('head.tpl');
 ?>
 
     <body>
-        <form id="loginForm" name="loginForm" action="" method="POST">
-            <fieldset>
-                <legend>新規登録</legend>
-                <div><font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font></div>
-                <label for="NAME">ユーザー名</label><input type="text" id="NAME" name="NAME" placeholder="ユーザー名を入力">
-                <br>
-                <label for="email">Email</label><input type="text" id="email" name="email" placeholder="メールアドレスを入力">
-                <br>
-                <label for="password">パスワード</label><input type="password" id="password" name="password" value="" placeholder="パスワードを入力">
-                <br>
-                <label for="password2">パスワード(確認用)</label><input type="password" id="password2" name="password2" value="" placeholder="再度パスワードを入力">
-                <br>
-                <input type="submit" id="signUp" name="signUp" value="新規登録">
-            </fieldset>
-        </form>
-        <p>すでに登録済みの方は<a href="login.php">こちら</a></p>
+        <h3 class="logintop">新規登録</h3>
+        <div class="overlay">
+            <div class="container">
+                <div class="row">    
+                    <form id="loginForm" name="loginForm" action="" method="POST">
+                        <fieldset>
+                            <div><font color="#ff0000"><?php echo htmlspecialchars($errorMessage, ENT_QUOTES); ?></font></div>
+                            <label for="NAME">ユーザー名</label><input type="text" id="NAME" name="NAME" placeholder="ユーザー名を入力">
+                            <br>
+                            <label for="email">Email</label><input type="text" id="email" name="email" placeholder="メールアドレスを入力">
+                            <br>
+                            <label for="password">パスワード</label><input type="password" id="password" name="password" value="" placeholder="パスワードを入力">
+                            <br>
+                            <label for="password2">パスワード(確認用)</label><input type="password" id="password2" name="password2" value="" placeholder="再度パスワードを入力">
+                            <br>
+                            <input type="submit" id="signUp" name="signUp" value="新規登録">
+                        </fieldset>
+                    </form>
+                    <div class="loginbtn"><a href="login.php" class="btn hanten free_submit">すでに登録済みの方はこちら</a></div>
+                </div>
+            </div>   
+        </div>   
     </body>
 </html>

@@ -56,7 +56,7 @@ $smarty->display('head.tpl');
 
 
     <body>
-        <h3 class="logintop">ログイン画面にようこそ</h3>
+        <h3 class="logintop">ログイン画面</h3>
         <div class="overlay">
             <div class="container">
                 <div class="row">    
@@ -70,9 +70,9 @@ $smarty->display('head.tpl');
                                 <div class="loginbtn"><input type="submit" id="login" name="login" value="ログイン"></div>
                             </fieldset>
                     </form>
+                    <div class="loginbtn"><a href="register.php" class="btn">はじめての方はこちらへ</a></div>
                 </div>
-            </div>
-            <div class="loginbtn"><a href="register.php" class="btn">はじめての方はこちらへ</a></div>
+            </div>   
         </div>
     </body>
 </html>

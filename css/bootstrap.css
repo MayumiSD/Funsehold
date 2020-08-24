@@ -3066,7 +3066,7 @@ table th[class*="col-"] {
 
 fieldset {
   padding: 0;
-  margin: 0;
+  margin: 5%;
   border: 0;
   min-width: 0;
 }

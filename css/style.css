@@ -37,7 +37,7 @@ a:focus, a:active {
 }
 
 p, span {
-  margin-bottom: 1.5em;
+  margin:5%;
   font-size: 20px;
   color: #727272;
   font-weight: 300;
@@ -58,8 +58,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .logintop {
   color: #F03861;
-  text-align: center;
+  text-align: left;
   margin-top: 10%;
+  padding-left: 10%;
 }
 
 ::-webkit-selection {
