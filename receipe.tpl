@@ -17,7 +17,9 @@
 <div class="fh5co-parallax" data-stellar-background-ratio="0.5">
     <div class= "report-container" id="report-container1">
       <div class="suggest-list-container"><a>提案</a></div>
+      {if isset({$smarty.session.email})}
       <div class="favorite-list-container"><a>私のお気に入りレシピ</a></div>
+      {/if}
     </div>
 
     <div class="report-container" id="report-container2">
@@ -40,6 +42,8 @@
                 </div>
             </div>
         </div>
+
+        {if isset({$smarty.session.email})}
           <div class="favorite-list-container">
               <div class="list">
                   <div class="list-container">
@@ -58,8 +62,9 @@
 
                       </div>
                   </div>
-              </div>
+               </div>
             </div>
+            {/if}
       </div>
 </div>
 
