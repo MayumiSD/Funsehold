@@ -1,8 +1,10 @@
 <?php
 session_start();
 $receipeName = getReceipeName();
-$favoriteInfo = getFavoriteInfo($_SESSION["email"]);
-var_dump($favoriteInfo);
+// $favoriteInfo = getFavoriteInfo($_SESSION["email"]);
+// var_dump($favoriteInfo);
+
+echo $_SESSION["email"];
 
 
 require './vendor/autoload.php';
@@ -23,13 +25,13 @@ function getReceipeName (){
      
 }
 
-function getFavoriteInfo($email){
-    if (isset($_SESSION["email"])){
-        require_once'DSN.php';
-        $sql = $pdo->prepare('SELECT * FROM favorite_receipe where email = ?');
-        $sql->execute();
-        return $sql->fetchAll(PDO::FETCH_ASSOC);
+// function getFavoriteInfo($email){
+//     if (isset($_SESSION["email"])){
+//         require_once'DSN.php';
+//         $sql = $pdo->prepare('SELECT * FROM favorite_receipe where email = ?');
+//         $sql->execute();
+//         return $sql->fetchAll(PDO::FETCH_ASSOC);
 
-    }
+//     }
 
-}
+// }
