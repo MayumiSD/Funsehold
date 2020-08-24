@@ -31,7 +31,7 @@ function getFavoriteInfo($userid){
                     $connect = "mysql:host={$dsn['host']};dbname={$dsn['dbnm']}";
                     $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
                     
-                    $stmt = $pdo->prepare('SELECT * FROM favorite_receipe INNER JOIN receipe USING receipe_id');
+                    $stmt = $pdo->prepare('SELECT * FROM favorite_receipe AS T1 JOIN receipe AS T2 ON T1.receipe_id = T2.receipe_id WHERE T1.email = ?');
                     $stmt->execute([$userid]);
                     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 
