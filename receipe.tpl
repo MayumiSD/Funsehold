@@ -45,17 +45,17 @@
                   <div class="list-container">
                       <div class="info-container">
 
-                        {for $i=1 to 10}
-                        <div class="receipe-number">
-                            {$i}
-                        </div>
-                          {/for}
-                        <div class="receipe-name">
-                        {foreach $receipeName as $receipe}
-                          <span>{$receipe.receipe_name}</span><br />
+                        <table style="width: 100%;">
+                          {foreach $favoriteInfo as $row}
+                          <tr>
+                            <td class="receipe-number">{$row@iteration}</td>
+                            {if $row.receipe_id eq $receipe.receipe_id}
+                            <td class="receipe-name">{$receipe.receipe_name}</td>
+                            {/if}
+                            <td>{$row.star}</td>
+                          </tr>
                           {/foreach}
-                        </div>
-                        <div class="loginbtn"><a class="star">★</a></div>
+                        </table>
 
                       </div>
                   </div>
