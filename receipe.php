@@ -2,13 +2,14 @@
 session_start();
 $receipeName = getReceipeName();
 $favoriteInfo = getFavoriteInfo($_SESSION["email"]);
-
+$userid = $_SESSION["email"];
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
 
 $smarty->assign('receipeName',$receipeName);
 $smarty->assign('favoriteInfo',$favoriteInfo);
+$smarty->assign('userid',$userid);
 $smarty->display('receipe.tpl');
 
 function getReceipeName (){
