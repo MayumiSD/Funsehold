@@ -1,10 +1,6 @@
 <?php
 session_start();
 $receipeName = getReceipeName();
-require_once'DSN.php';
-// 接続先DBリンク
-$connect = "mysql:host={$dsn['host']};dbname={$dsn['dbnm']}";
-$pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 
 echo $_SESSION["email"];
 
@@ -29,12 +25,15 @@ function getReceipeName (){
 
 if (isset($_SESSION["email"])){
         $userid = $_SESSION["email"];
-        $connect;
-        $pdo;
+        require('DSN.php');
+            // 接続先DBリンク
+        $connect = "mysql:host={$dsn['host']};dbname={$dsn['dbnm']}";
+        $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+        
         $sql = $pdo->prepare('SELECT * FROM favorite_receipe where email = ?');
         $sql->execute($userid);
         $data = $sql->fetchAll(PDO::FETCH_ASSOC);
-        echo $data;
+        var_dump($data);
 
 }
         
