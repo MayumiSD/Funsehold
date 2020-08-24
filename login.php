@@ -56,7 +56,7 @@ $smarty->display('head.tpl');
 
 
     <body>
-        <h3 class="fh5co-logo">ログイン画面にようこそ</h3>
+        <h3 class="logintop">ログイン画面にようこそ</h3>
         <div class="overlay">
             <div class="container">
                 <div class="row">    
