@@ -2,6 +2,8 @@
 session_start();
 $receipeName = getReceipeName();
 $favoriteInfo = getFavoriteInfo($_SESSION["email"]);
+var_dump($favoriteInfo);
+
 
 require './vendor/autoload.php';
 $smarty = new Smarty();
@@ -29,9 +31,10 @@ function getFavoriteInfo($userid){
                     $connect = "mysql:host={$dsn['host']};dbname={$dsn['dbnm']}";
                     $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
                     
-                    $stmt = $pdo->prepare('SELECT * FROM favorite_receipe where email = ?');
+                    $stmt = $pdo->prepare('SELECT * FROM favorite_receipe INNER JOIN receipe USING receipe_id where email = ?');
                     $stmt->execute([$userid]);
                     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             }
  }
+

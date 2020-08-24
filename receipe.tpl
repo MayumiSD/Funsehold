@@ -49,10 +49,9 @@
                           {foreach $favoriteInfo as $row}
                           <tr>
                             <td class="receipe-number">{$row@iteration}</td>
-                            {if $row.receipe_id eq $receipe.receipe_id}
-                            <td class="receipe-name">{$receipe.receipe_name}</td>
-                            {/if}
+                            <td class="receipe-name">{$row.receipe_id}</td>
                             <td>{$row.star}</td>
+                            <td><div class="loginbtn"><a href="cook.php?receipeid={$row.receipe_id}" class="btn" id="go">作る</a></div></td>
                           </tr>
                           {/foreach}
                         </table>
