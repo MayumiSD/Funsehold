@@ -3,22 +3,20 @@
 
     <div class="search-container">
       <div class="search">
-        <form method="GET" action="cook.php">
+        <a href="cook.php?receipeid={$row.receipe_id}" class="btn" id="go">
           <input id="receipe-input" type="text" placeholder="料理名、食材、目的で探す">
           <i class="fas fa-search"></i>
-        </form>
+        </a>
       </div>
     </div>
-
     <div class="search-container">
       <div class="search">
-        <form method="GET" action="cook.php">
+        <a href="cook.php?receipeid={$row.receipe_id}" class="btn" id="go">
             <input id="receipe-input" type="text" placeholder="地名、郵便番号で特売情報を探す" >
             <i class="fas fa-search"></i>
-        </form>
+        </a>
       </div>
     </div>
-
 
 <div class="fh5co-parallax" data-stellar-background-ratio="0.5">
     <div class= "report-container" id="report-container1">
