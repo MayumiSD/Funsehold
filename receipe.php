@@ -31,7 +31,7 @@ function getFavoriteInfo($userid){
                     $pdo = new PDO($connect, $dsn['user'], $dsn['pass'], array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
                     
                     $stmt = $pdo->prepare('SELECT * FROM favorite_receipe where email = ?');
-                    $stmt->execute($userid);
+                    $stmt->execute([$userid]);
                     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             }
