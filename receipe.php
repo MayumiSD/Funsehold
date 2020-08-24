@@ -32,7 +32,7 @@ if (isset($_SESSION["email"])){
         $sql = $pdo->prepare('SELECT * FROM favorite_receipe where email = ?');
         $sql->execute($userid);
         $data = $sql->fetchAll(PDO::FETCH_ASSOC);
-        var_dump ($data);
+        echo $data;
 
 }
         
