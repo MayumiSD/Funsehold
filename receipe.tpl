@@ -3,18 +3,14 @@
 
     <div class="search-container">
       <div class="search">
-        <a href="cook.php?receipeid={$row.receipe_id}">
           <input id="receipe-input" type="text" placeholder="料理名、食材、目的で探す">
           <i class="fas fa-search"></i>
-        </a>
       </div>
     </div>
     <div class="search-container">
       <div class="search">
-        <a href="cook.php?receipeid={$row.receipe_id}">
             <input id="receipe-input" type="text" placeholder="地名、郵便番号で特売情報を探す" >
             <i class="fas fa-search"></i>
-        </a>
       </div>
     </div>
 
